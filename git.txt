@@ -7,5 +7,5 @@ git push -u origin master
 # ------------------------------------------------------------------------------
 
 git add .
-git commit -m "second commit only for testing of GIT"
+git commit -m "return statement if word not found"
 git push -u origin master
