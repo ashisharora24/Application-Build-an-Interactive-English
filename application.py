@@ -4,8 +4,9 @@ import json
 data = json.load(open("data.json"))
 
 def translate(word):
-    if word in data:
-        return data[word]
+    w = word.lower()
+    if w in data:
+        return data[w]
     return "The word {} doesnot exist. Please double check it.".format(word)
 
 
