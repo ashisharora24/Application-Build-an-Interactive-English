@@ -7,5 +7,5 @@ git push -u origin master
 # ------------------------------------------------------------------------------
 
 git add .
-git commit -m "return statement if word not found"
+git commit -m "handled casing"
 git push -u origin master
