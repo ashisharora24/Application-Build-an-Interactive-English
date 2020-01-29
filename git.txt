@@ -1,4 +1,5 @@
 echo "# Application-Build-an-Interactive-English" >> README.md
+
 git init
 git add .
 git commit -m "first commit"
@@ -7,5 +8,7 @@ git push -u origin master
 # ------------------------------------------------------------------------------
 
 git add .
-git commit -m "handled casing"
+git commit -m "testing_dev"
 git push -u origin master
+
+testing only

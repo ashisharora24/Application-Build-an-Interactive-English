@@ -19,9 +19,12 @@ def translate(word):
     w = word.lower()
     if w in data:
         return data[w]
-    # get the list of closes words
+
+    # incase word doesn't exist
+    # get the list of close words
     close_match_list = get_close_matches(w,data.keys())
     if len(close_match_list)>0:
+        # if the close words exist, then we will suggest them
         print('We didnt find your word in dictionary, but we found some close match')
         print("Press appropriate number or press 0 to exist")
         count = 1
@@ -41,7 +44,7 @@ def translate(word):
             else:
                 print("You have entered incorrect select. please try again")
 
-
+    # incase get_close_words doesnt exist, then we will return the statement
     return "The word {} doesnot exist. Please double check it.".format(word)
 
 word = input("Enter the word : ")
